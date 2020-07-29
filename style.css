@@ -1,0 +1,136 @@
+
+* {box-sizing: border-box;}
+body {
+    background-image: url(images/hii.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 80vw;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* margin: auto; */
+}
+img{
+    height: 70vh;
+    width: 80vw;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .slideshow-container {
+        width: 37vw;
+        height: 70vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        /* margin: auto; */
+    }
+    img{
+        height: 70vh;
+        width: 37vw;
+    }
+    .text{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Brush Script MT";
+        font-size: 1em;
+      }
+
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .text{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Brush Script MT";
+        font-size: 1em;
+      }
+    .slideshow-container {
+        width: 37vw;
+        height: 70vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        /* margin: auto; */
+    }
+    img{
+        height: 70vh;
+        width: 37vw;
+    }
+    
+  }
+.text{
+    position: fixed;
+    width: 70vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Brush Script MT";
+    font-size: 2.5em;
+  }
+  .text1{
+      animation: fade1 1s 1s 1 ease;
+}
+  .text2{
+    animation: fade1 1s 2s 1 ease;
+}
+.text3{
+    animation: fade1 1s 3s 1 ease;
+}
+.text4{
+    animation: fade1 1s 4s 1 ease;
+}
+body{
+    color: aliceblue;
+}
+@keyframes fade1 {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+
+
+
+  /* // TWITTER HEART */
